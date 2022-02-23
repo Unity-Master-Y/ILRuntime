@@ -39,6 +39,7 @@ ILRuntime1.6版新增了Package Manager发布，使用Unity2018以上版本可�
 ILRuntime包安装完毕后，在Package Manager中选中ILRuntime， 右边详细页面中有Samples，点击右方的`Import to project`可以将ILRuntime的示例Demo直接导入当前工程。
 
 >示例导入工程后有可能因为没开启unsafe导致编译报错，可以在PlayerSettings中勾选Allow unsafe code解决编译问题。
+>有可能HotFix_Project~ 热更DLL的vs工程 生成时候出现 **CS0012 类型“MulticastDelegate/Object”在未引用的程序集中定义。必须添加对程序集“netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51”的引用**的情况 可以在Unity ->Project Setting ->Other Setting ->Api Compatibility Level 选择.NET Framework(在unity2021.2.0f1已验证) 解决生成DLL问题。
 
 在Assets\Samples\ILRuntime\1.6\Demo\HotFix_Project~目录中打开热更DLL的vs工程，直接编译，然后就可以正常运行ILRuntime的Demo示例了
 
